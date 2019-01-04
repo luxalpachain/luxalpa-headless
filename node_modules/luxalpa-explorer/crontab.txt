@@ -1,0 +1,1 @@
+*/5 * * * * cd luxalpa-relay; node check_daemon.js 1>>~/.config/luxalpa-relay/check_daemon.log 2>>~/.config/luxalpa-relay/check_daemon.err

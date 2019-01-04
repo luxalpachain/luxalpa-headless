@@ -1,0 +1,31 @@
+{
+  "name": "lux-headless",
+  "description": "luxalpa headless wallet",
+  "author": "luxalpa",
+  "version": "0.1.9",
+  "main": "start.js",
+  "keywords": [
+    "wallet",
+    "headless",
+    "luxalpa",
+    "full node"
+  ],
+  "license": "MIT",
+  "repository": {
+    "url": "git://github.com/luxalpa/headless-luxalpa.git",
+    "type": "git"
+  },
+  "bugs": {
+    "url": "https://github.com/luxalpa/headless-luxalpa/issues"
+  },
+  "browser": {
+    "request": "browser-request",
+    "secp256k1": "secp256k1/js"
+  },
+  "dependencies": {
+    "core": "git+https://github.com/luxalpa/core.git",
+    "bitcore-lib": "^0.13.14",
+    "bitcore-mnemonic": "~1.0.0",
+    "json-rpc2": "^1.0.2"
+  }
+}
