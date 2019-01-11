@@ -4,17 +4,17 @@
 //exports.port = 6611;
 //exports.myUrl = 'wss://mydomain.com/bb';
 exports.bServeAsHub = false;
-exports.bLight = false;
+exports.bLight = true;
 
 
 exports.storage = 'sqlite';
 
-exports.WS_PROTOCOL = 'wss://';
-exports.hub = 'hub1.luxalpa.com/bb';
+exports.WS_PROTOCOL = 'ws://';
+exports.hub = '192.168.5.149:8286';
 exports.deviceName = 'Headless';
 exports.permanent_pairing_secret = 'randomstring';
-//exports.control_addresses = ['DEVICE ALLOWED TO CHAT'];
-//exports.payout_address = 'WHERE THE MONEY CAN BE SENT TO';
+exports.control_addresses = ['DEVICE ALLOWED TO CHAT'];
+exports.payout_address = 'WHERE THE MONEY CAN BE SENT TO';
 exports.KEYS_FILENAME = 'keys.json';
 
 // where logs are written to (absolute path).  Default is log.txt in app data directory
