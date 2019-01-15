@@ -9,8 +9,9 @@ exports.bLight = false;
 
 exports.storage = 'sqlite';
 
-exports.WS_PROTOCOL = 'ws://';
-exports.hub = '192.168.5.149:8286';
+exports.WS_PROTOCOL = 'wss://';
+exports.hub = 'hub1.luxalpa.com/bb';
+
 exports.deviceName = 'Headless';
 exports.permanent_pairing_secret = 'randomstring';
 exports.control_addresses = ['DEVICE ALLOWED TO CHAT'];
