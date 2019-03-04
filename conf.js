@@ -9,9 +9,10 @@ exports.bLight = false;
 
 exports.storage = 'sqlite';
 
+// exports.WS_PROTOCOL = 'ws://';
+// exports.hub = '192.168.5.149:8286';
 exports.WS_PROTOCOL = 'wss://';
 exports.hub = 'hub1.luxalpa.com/bb';
-
 exports.deviceName = 'Headless';
 exports.permanent_pairing_secret = 'randomstring';
 exports.control_addresses = ['DEVICE ALLOWED TO CHAT'];
@@ -28,5 +29,6 @@ exports.CONSOLIDATION_INTERVAL = 3600*1000;
 // this is for runnining RPC service only, see play/rpc_service.js
 exports.rpcInterface = '127.0.0.1';
 exports.rpcPort = '6332';
+
 
 console.log('finished headless conf');

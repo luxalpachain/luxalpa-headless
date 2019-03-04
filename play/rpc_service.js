@@ -16,6 +16,7 @@ var storage = require('core/storage.js');
 var constants = require('core/constants.js');
 var validationUtils = require("core/validation_utils.js");
 var wallet_id;
+var objectHash = require("core/object_hash.js");
 
 if (conf.bSingleAddress)
 	throw Error('can`t run in single address mode');
