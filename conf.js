@@ -6,6 +6,7 @@
 exports.bServeAsHub = false;
 exports.bLight = false;
 
+exports.bStaticChangeAddress=true;
 
 exports.storage = 'sqlite';
 
