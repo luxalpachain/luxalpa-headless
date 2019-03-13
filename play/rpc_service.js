@@ -82,6 +82,25 @@ function initRPC() {
 			});
 		});
 	});
+	
+	/**
+	 * Creates and returns change address.
+	 * @return {String} address
+	 */
+	server.expose('getchangeaddress', function(args, opt, cb) {
+		mutex.lock(['rpc_getnewaddress'], function(unlock){
+			walletDefinedByKeys.readAddressByIndex(wallet_id, 1, 0, function(addressInfo){
+				if (addressInfo){
+					unlock();
+					return cb(null, addressInfo.address);
+				}
+				walletDefinedByKeys.issueAddress(wallet_id, 1, 0, function(addressInfo){
+					unlock();
+					cb(null, addressInfo.address);
+				});
+			});
+		});
+	});
 
 	/**
 	 * Returns address balance(stable and pending).
